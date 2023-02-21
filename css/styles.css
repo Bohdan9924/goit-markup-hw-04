@@ -91,6 +91,7 @@ button {
 
 .header {
    border-bottom: 1px solid var(--footer-text-color);
+   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -187,7 +188,6 @@ button {
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   background-attachment: fixed;
  }
 .hero-tittle{
    color:var(--background-color);
@@ -258,6 +258,7 @@ button {
    justify-content: center;
    align-items: center;
    margin-bottom: 8px;
+   border-radius: 4px;
 }
 
 .icon-advantages {
@@ -371,7 +372,8 @@ button {
    height: 16px;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
    background-color: var(--color-nav-hover);
 }
 
@@ -392,7 +394,6 @@ button {
    justify-content: space-between;
    align-items: center;
    gap: 24px; 
-   margin-bottom: 72px;
 }
 
 .customers-item {
@@ -404,6 +405,7 @@ button {
    display: flex;
    justify-content: center;
    align-items: center;
+   fill: var(--color-fill);
    width: 100%;
    height: 100%;
    border: 1px solid var(--color-fill);
@@ -413,17 +415,12 @@ button {
 .customers-logo {
    width: 104px;
    height: 56px;
-   fill: var(--color-fill);
-}
-
-.customers-logo:hover,
-.customers-logo:focus {
-   fill: var(--color-nav-hover);
 }
 
 .customers-icon:hover,
 .customers-icon:focus {
    border-color: var(--color-nav-hover);
+   fill: var(--color-nav-hover);
 }
 
 
